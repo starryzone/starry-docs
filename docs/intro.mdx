@@ -1,0 +1,26 @@
+---
+sidebar_position: 1
+slug: /
+---
+
+# Welcome, traveller
+
+Starrybot is a token-gating Discord bot using slash commands and an ExpressJS backend to route offline-signing verification.
+
+:::note FYI
+
+We are in the process of making Starrybot an open-source repository! These docs may change rapidly in the near future as new eyes help us refactor the implementation for the better.
+
+:::
+
+## How Starrybot Works
+
+When installed, Starrybot provides Slash Commands for guild admin to create and manage **token rules** for each server the bot is installed in. Members of the guild can opt into the token gating by using the Slash Command `/starry join` to allow their Keplr wallet to verify which roles they should have.
+
+## Glossary
+
+* **Token Rule** - A discord role combined with the conditions that must be met for a discord user to receive it.
+* **Saganism** - A Carl Sagan themed Lorum Ipsum text generator that we chose to use for the offline-signing text
+* **Astrolabe** - The functionality in the bot responsible for handling all the token querying, balance calculations in the app. The name is derived from the IRL instrument for finding stars in the sky. The long-term goal is to pull this out into it's own npm package as a public good.
+* **Wizardware** - The functionality in the bot responsible for handling the step-user interaction-step sequencing in all of the bot commang configurations. The name is derived from a combination of "middleware" and "installation wizards". The long-term goal is to pull this out into it's own npm package as a public good.
+
